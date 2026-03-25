@@ -1,17 +1,18 @@
 package com.MoneyTree.dto.response;
 
-import lombok.Data;
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
+
 @Data
+@NoArgsConstructor
+@AllArgsConstructor 
 public class AuthResponse {
     private String accessToken;
     private String refreshToken;
     private UserResponse user;
-	public AuthResponse(String accessToken2, String refreshToken2, UserResponse mapToResponse) {
-		// TODO Auto-generated constructor stub
-	}
+
 	public String getAccessToken() {
 		return accessToken;
 	}
