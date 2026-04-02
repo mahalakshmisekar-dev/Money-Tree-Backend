@@ -36,7 +36,7 @@ public class TransactionController {
     
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteTransaction(@PathVariable Long id) {
-        // Implement delete logic
+        transactionService.deleteTransaction(id);
         return ResponseEntity.ok().build();
     }
     
